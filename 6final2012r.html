@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link href="Favicon.ico" type="image/x-icon" rel="shortcut icon" />
+ <!--[if lt IE 9]>
+<script type="text/javascript"> 
+   document.createElement("nav"); 
+   document.createElement("header"); 
+   document.createElement("footer"); 
+   document.createElement("section"); 
+   document.createElement("article"); 
+   document.createElement("aside"); 
+   document.createElement("hgroup"); 
+</script>
+<![endif]-->
+	<title>Coordinaci&oacute;n General de Lenguas</title>
+	<link rel="stylesheet" href="css/final2012.css" type="text/css" media="screen" />
+	<meta charset="UTF-8">
+	
+	<!--<style>
+		* { margin: 0; padding: 0; }
+		
+		html { 
+			background: url(images/CGLv.jpg) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		
+		#page-wrap { width: 400px; margin: 50px auto; padding: 20px; background: white; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; }
+		p { font: 15px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; }
+	</style>-->
+</head>
+
+<body>
+<FORM >
+<div id="wrapper"><!-- Aquí se envuelve todo el contenido de la página -->
+	<header>
+		<img src="images/HeaderCirc.png" width="800" height="85" alt=""><!-- header image -->
+	</header><!-- Fin del encabezado -->
+	
+	<nav><!-- menu superior y supremo -->
+		<div class="menu">
+			<ul>
+				<li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resultados del Examen Diagn&oacute;stico Final 2012</li>
+			</ul>
+		</div>
+	</nav><!-- fin del menu supremo -->	
+	<section id="main"><!-- contenido principal y menus laterales -->		
+			<section id="content"><!-- Este es el contenido principal -->			
+        		<article>
+				<p id="interpretacion">El peso de cada reactivo se valor&oacute; de acuerdo con los niveles de referencia A1 y A2 del Marco Com&uacute;n Europeo de Referencia (MCER).</br>
+				Debido a que los alumnos del 6&deg; a&ntilde;o concluyen su aprendizaje de lenguas en el bachillerato, es conveniente medir su progreso de</br>
+				manera global. A&uacute;n as&iacute;, se le otorg&oacute; un valor mayor a la secci&oacute;n de comprensi&oacute;n de lectura, de acuerdo con lo establecido por el</br>
+				programa vigente para la asignatura de Ingl&eacute;s VI. El examen refleja que los alumnos con mejores resultados hayan asimilado las</br>
+				tem&aacute;ticas centrales del nivel esperado al concluir las asignaturas de Ingl&eacute;s IV, V y VI. </br></br>
+				
+				<strong>Alumnos con resultado final &quot;NO SATISFACTORIO&quot;:</strong> son aquellos cuyos conocimientos esperados para el curso de Ingl&eacute;s IV </br>
+				V y VI no se encuentran firmemente asimilados. Adem&aacute;s, sus habilidades de comprensi&oacute;n comprensi&oacute;n auditiva y de lectura tambi&eacute;n</br>
+				se encuentran por debajo de lo esperado.</br></br>
+				
+				<strong>Alumnos con resultado final de &quot;SATISFACTORIO&quot;:</strong> son aquellos cuyos conocimientos b&aacute;sicos contemplados para los cursos de</br>
+				Ingl&eacute;s IV, V y VI son suficientemente s&oacute;lidos. Sus habilidades de comprensi&oacute;n auditiva y de lectura se han desarrollado de forma aceptable.</br></br>
+				
+				<strong>Alumnos con resultado final de &quot;SATISFACTORIO +&quot;:</strong> Estos alumnos manejan de forma adecuada los aspectos contemplados en los </br>
+				cursos de Ingl&eacute;s IV, V y VI. Adem&aacute;s, el desempe&ntilde;o de sus habilidades de comprensi&oacute;n auditiva y de lectura es bueno y consistente.</br></br>
+				Los resultados que aparecen como <strong>NP</strong> significan que el alumno no present&oacute; el examen en cuesti&oacute;n.</p>
+				  
+<?php
+$link = mysql_connect("mysql5.000webhost.com", "a6493246_hugix4", "unamcglhugix4");
+mysql_select_db("a6493246_alumnos",$link);
+$sql = "select * from Final_ENP_sexto_2012 where Plantel='$_POST[Plantel]' && Grupo='$_POST[Grupo]'";
+$sql = mysql_query($sql) or die("Revise nuevamente los datos ingresados");
+
+echo"<style type='text/css'>
+  p {
+	font-family:Century Gothic, sans-serif;
+	font-size:11px;
+    color: #000;
+    }
+
+	p4{
+	font-family:Century Gothic, sans-serif;
+	font-size:12px;
+    color: #000;
+	}	
+  </style>";
+//echo "</br><p align='center'>Los n&uacute;meros de los resultados que aparecen abajo, muestran los paquetes did&aacutecticos que debes consultar de acuerdo a tu nivel.</p></br>";
+echo "<table border='1' align='center' width='100%' cellpadding='0'>
+<tr align='center'>		
+		<td width='15%'><p><b>#Cuenta</b></td>
+		<td width='15%'><p><b>Grupo</b></td>
+		<td width='45%'><p><b>Nombre</b></td>
+		<td width='25%'><p><b>Diagn&oacute;stico final 2012</b></td>
+		
+</tr>";
+
+while($row = mysql_fetch_array($sql))
+{
+echo "<table border='1' align='center' width='100%' cellpadding='0'>
+<tr align='center'>
+	<td width='15%'><p>".$row["Cuenta"]."</td>
+	<td width='15%'><p>".$row["Grupo"]."</td>
+	<td width='45%'><p>".$row["Nombre"]."</td>
+	<td width='25%'><p>".$row["Exfi"]."</td>	
+</tr>";
+}
+echo"</table>";
+echo"</body>";
+?>
+				</article>
+						</br></br>
+			</section><!-- Aquí termina el contenido principal de la página -->		
+	</section><!-- Este es el fin tanto de las barras laterales como de el contenido-->	
+	<footer>
+		<section id="footer-area">
+			<section id="footer-outer-block">
+				<aside class="footer-segment">
+					<ul><p id='letrita'>									
+						&copy;D.R. Universidad Nacional Aut&oacute;noma de M&eacute;xico 2012.<strong>Coordinaci&oacute;n General de Lenguas</strong>, Calle Agua #130, Jardines del Pedregal,
+						Alvaro Obreg&oacute;n, M&eacute;xico D. F. CP 01090.</br>
+						Tel. 15 20 00 00Extensiones: 102 y 103 Hecho en M&eacute;xico. Prohibida su reproducci&oacute;n parcial o total para fines de lucro. <small>&nbsp;&nbsp;&nbsp;&nbsp;&oslash;Hugix4</small></p>
+					</ul>
+				</aside><!-- primer columna del footer -->
+			</section><!-- Aqui se termina el footer editable -->
+		</section><!-- Fin del espacio del footer -->
+	</footer>	
+</div><!-- Fin de la "envoltura" -->
+<!--Que no le digan y que no le cuenten, toda esta página fue diseñada en su totalidad por el Ingeniero Hugo Luna alias hugix-->
+</form>
+</body>
+
+</html>

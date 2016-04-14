@@ -1,0 +1,301 @@
+/* reset */
+* {
+margin: 0;
+padding: 0;
+font-family: Helvetica,Calibri,Verdana,sans-serif,cursive;
+}
+
+
+header, footer, section, aside, nav, article {
+display: block;
+font-family: Helvetica,Calibri,Verdana,sans-serif,cursive;
+}
+
+body {
+background-image: url("../images/cglu.png");
+background-repeat:repeat;
+line-height: 1;
+font-family: Helvetica,Calibri,Verdana,sans-serif,cursive;
+color: #050564;/*Color de las letras del contenido principal*/
+font-size: 14px;
+line-height: 18px;
+}
+
+li{
+line-height: 1;
+font-family: Helvetica,Calibri,Verdana,sans-serif,cursive;
+color: #fff;/*Color de las letras de la barra superior*/
+font-size: 14px;
+line-height: 18px;
+}
+	
+/* layout */
+
+#interpretacion{
+font-size: 12px;
+font-family: sans-serif;
+}
+
+#wrapper {
+font-family: Helvetica,Calibri,Verdana,sans-serif,cursive;
+width: 800px;
+margin: 0 auto;
+margin-top: 80px;
+margin-bottom: 20px;
+border: 3px solid #050564;/*El color delcontorno del contenido*/
+background: #050564;/*Color del fondo del top lo que rodea a la imagen del header*/
+/* curved border radius */
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+}
+
+nav {
+font-family: Helvetica,Calibri,Verdana,sans-serif,cursive;
+width: 800px;
+height: 50px;
+margin: 0 auto;
+background: #050564;/*Color de la barra del titulo, debajo del header*/
+margin-top: -6px;
+}
+
+#grados{
+font-family: sans-serif;
+color: #050564;
+text-align:center;
+}
+
+#main {
+width: 800px;
+font-family: Helvetica,Calibri,Verdana,sans-serif,cursive;
+margin: 0 auto;
+padding-top: 30px;
+background: #fff; /*Color del contenido*/
+overflow: hidden;
+}
+
+#content {
+float: left;
+width: 740px;
+margin-left: 40px;
+font-family: Helvetica,Calibri,Verdana,sans-serif,cursive;
+}
+
+#sidebar1 {
+font-family: Helvetica,Calibri,Verdana,sans-serif,cursive;
+float: left;
+padding-left: 20px;
+width: 180px;
+}
+
+#sidebar2 {
+float: right;
+padding-right: 30px;
+width: 180px;
+}
+
+footer {
+width: 800px;
+margin: 0 auto;
+clear: both;
+}
+
+/* basics */
+
+h1,h2,h3,h4,h5,h6 {
+font-weight: bold;
+clear: both;
+color: #fff;/*No hace cambios*/
+}
+
+a:link, a:visited {
+color:#fff;/*color de los links del contenido*/
+}
+
+a:hover, a:active {
+color: #cb9d01;/*Color al pasar el mouse sobre los links*/
+}
+
+p {
+margin-bottom: 5px;
+}
+
+li {
+padding-left: 5px;
+}
+
+/* nav */
+
+nav .menu {
+font-size: 14px;
+font-weight: bold;
+}
+
+nav .menu ul {
+margin: 0;
+padding: 17px 0 0 20px;
+list-style: none;
+line-height: normal;
+}
+
+nav .menu li {
+display: block;
+float: left;
+}
+/*Letras del menu superior*/
+nav .menu a {
+display: block;
+float: left;
+margin-right: 5px;
+padding: 0px 15px;
+text-decoration: none;
+color: #fff;/*azul*/
+}
+/*Al pasar el mouse sobre el menu superior*/
+nav .menu a:hover {
+text-decoration: underline;
+color:#fff;/**/
+}
+
+/** HEADER */
+
+header {
+padding: 0 0 0 0;
+}
+
+header>h1 {
+float: left;
+margin: 0 0 18px 10px;
+width: 600px;
+font-size: 40px;
+line-height: 36px;
+}
+
+header>h1 a {
+color: #fff;
+font-weight: bold;
+text-decoration: none;
+text-shadow: 0px 2px 3px #ddd;
+}
+
+header>h2 {
+color: #fff;
+clear: right;
+float: right;
+font-style: italic;
+font-size: 14px;
+margin: 14px 10px 18px 0;
+}
+
+/** ARTICLES **/
+article img {
+border: none;
+/* curved border radius */
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+}
+
+#content p, ul, ol, hr {
+margin-bottom: 14px;
+}
+
+#acu{
+text-align:justify;
+}
+
+#content ul ul, ol ol, ul ol, ol ul {
+margin-bottom: 0;
+}
+
+#content h1, h2, h3, h4, h5, h6 {
+color: #050564;/*Color del titulo del contenido*/
+margin: 0 0 20px 0;
+line-height: 1.5em;
+}
+
+.alignleft, img.alignleft {
+display: inline;
+float: left;
+margin-right: 10px;
+}
+
+.alignright, img.alignright {
+display: inline;
+float: right;
+margin-left: 10px;
+}
+
+.aligncenter, img.aligncenter {
+clear: both;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+img {
+margin-bottom: 2px;
+}
+
+/* sidebar and footer widget blocks */
+
+aside h3 {
+font-size: 18px;
+text-shadow: 0px 2px 3px #ddd;
+}
+
+aside ul {
+list-style: square;
+color: #cb9d01;/*cubos de los menus laterales*/
+margin: -15px 0 15px 25px;
+}
+
+#footer-area {
+background: #050564;/*Color del fondo del footer*/
+color: #ed0000;
+font-size: 90%;
+padding: 18px 0;
+overflow: hidden;
+/* curved border radius */
+-moz-border-radius-bottomright: 8px;
+-moz-border-radius-bottomleft: 8px;
+-webkit-border-bottom-left-radius: 8px;
+-webkit-border-bottom-right-radius: 8px;
+}
+
+.footer-segment {
+float: left;
+margin-right: 20px;
+margin-left: 20px;
+width: 920px;
+}
+#letrita{
+font-size:9px;
+}
+
+#firm{
+font-size:6px;
+}
+
+footer aside h4 {
+color: #fff;/*Color "titulo" del footer  rojo ed0000*/
+font-size: 16px;
+line-height: 1.5em;
+}
+
+footer ul {
+list-style: none;
+margin: -15px 0;
+}
+
+footer a:link, footer a:visited {
+color: #fff; /*Color de los links*/
+}
+
+footer a:hover { 
+text-decoration: underline;
+color:#fff;/*Color de las letras al pasar el mouse sobre los links*/
+}
+
+footer p {
+margin-top: -15px;
+color: #fff;/*Color de letras de hasta abajo*/
+}

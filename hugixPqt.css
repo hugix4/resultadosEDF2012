@@ -1,0 +1,285 @@
+#tab-container-1{
+background: #000;/*Color del tab container*/
+}
+
+#tab-container-1-nav  li{
+font-family: Helvetica,Calibri,Verdana,sans-serif,cursive;
+background: #000;
+display: block;
+float: left;
+}
+
+#tab1{
+background: #123;/*Color del tab container*/
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+
+header, footer, section, aside, nav, article {
+display: block;
+}
+
+body {
+line-height: 1;
+background: #000;/*Color de los laterales*/
+font-family: Helvetica,Calibri,Verdana,sans-serif,cursive;
+color: #fff;/*Color de las letras del contenido principal*/
+font-size: 14px;
+line-height: 18px;
+}
+	
+/* layout */
+
+#wrapper {
+width: 939px;
+margin: 0 auto;
+margin-top: 20px;
+margin-bottom: 20px;
+border: 3px solid #000;/*El color de la frontera de todo el contenido*/
+background: #422b08;/*Color del fondo del top*/
+/* curved border radius */
+/*-moz-border-radius: 10px;
+-webkit-border-radius: 10px;*/
+}
+
+nav {
+width: 940px;
+height: 50px;
+margin: 0 auto;
+background: #07bd07;/*54f821Color de la barra superior*/
+margin-top: -6px;
+}
+
+#main {
+width: 940px;
+margin: 0 auto;
+padding-top: 30px;
+background: #0078ff; /*Color del contenido en general*/
+overflow: hidden;
+}
+
+#content {
+float: left;
+width: 670px;
+margin-left: 40px;
+}
+
+#sidebar1 {
+float: left;
+padding-left: 20px;
+width: 180px;
+}
+
+#sidebar2 {
+float: right;
+padding-right: 30px;
+width: 180px;
+}
+
+footer {
+width: 940px;
+margin: 0 auto;
+clear: both;
+}
+
+/* basics */
+
+h1,h2,h3,h4,h5,h6 {
+font-weight: bold;
+clear: both;
+color: #fff;/*No hace cambios*/
+}
+
+a:link, a:visited {
+color:#fff;/*color de los links del contenido*/
+}
+
+a:hover, a:active {
+color: #07bd07;/*Color al pasar el mouse sobre los links*/
+}
+
+p {
+margin-bottom: 18px;
+}
+
+li {
+padding-left: 5px;
+}
+
+/* nav */
+
+nav .menu {
+font-size: 14px;
+font-weight: bold;
+}
+
+nav .menu ul {
+margin: 0;
+padding: 17px 0 0 20px;
+list-style: none;
+line-height: normal;
+}
+
+nav .menu li {
+display: block;
+float: left;
+}
+/*Letras del menu superior, las que están debajo de la imagen dle header*/
+nav .menu a {
+display: block;
+float: left;
+margin-right: 5px;
+padding: 0px 15px;
+text-decoration: none;
+color: #111181;/*azul*/
+}
+/*Al pasar el mouse sobre el menu superior*/
+nav .menu a:hover {
+text-decoration: underline;
+color:#ffffff;/**/
+}
+
+/** HEADER */
+
+header {
+padding: 0 0 0 0;
+}
+
+header>h1 {
+float: left;
+margin: 0 0 18px 10px;
+width: 600px;
+font-size: 40px;
+line-height: 36px;
+}
+
+header>h1 a {
+color: #555;
+font-weight: bold;
+text-decoration: none;
+text-shadow: 0px 2px 3px #ddd;
+}
+
+header>h2 {
+color: #555;
+clear: right;
+float: right;
+font-style: italic;
+font-size: 14px;
+margin: 14px 10px 18px 0;
+}
+
+/** ARTICLES **/
+article img {
+border: none;
+/* curved border radius */
+/*-moz-border-radius: 10px;
+-webkit-border-radius: 10px;*/
+}
+
+#content p, ul, ol, hr {
+margin-bottom: 24px;
+}
+
+#acu{
+text-align:justify;
+}
+
+#content ul ul, ol ol, ul ol, ol ul {
+margin-bottom: 0;
+}
+
+#content h1, h2, h3, h4, h5, h6 {
+color: #fff;/*Color de los titulos menus laterales*/
+margin: 0 0 20px 0;
+line-height: 1.5em;
+}
+
+.alignleft, img.alignleft {
+display: inline;
+float: left;
+margin-right: 10px;
+}
+
+.alignright, img.alignright {
+display: inline;
+float: right;
+margin-left: 10px;
+}
+
+.aligncenter, img.aligncenter {
+clear: both;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+img {
+margin-bottom: 2px;
+}
+
+/* sidebar and footer widget blocks */
+
+aside h3 {
+font-size: 18px;
+text-shadow: 0px 2px 3px #ddd;
+}
+
+aside ul {
+list-style: square;
+color: #07bd07;/*cubos de los menus laterales*/
+margin: -15px 0 15px 25px;
+}
+
+#footer-area {
+background: #f37020;/*f18113Color del fondo del footer*/
+color: #422b08;
+font-size: 90%;
+padding: 18px 0;
+overflow: hidden;
+/* curved border radius */
+/*-moz-border-radius-bottomright: 8px;
+-moz-border-radius-bottomleft: 8px;
+-webkit-border-bottom-left-radius: 8px;
+-webkit-border-bottom-right-radius: 8px;*/
+}
+
+.footer-segment {
+float: left;
+margin-right: 20px;
+margin-left: 20px;
+width: 190px;
+}
+
+footer aside h4 {
+color: #101281;/*07bd07Color "titulo" del footer*/
+font-size: 16px;
+line-height: 1.5em;
+}
+
+#letrita{
+font-size:9px;
+}
+
+footer ul {
+list-style: none;
+margin: -15px 0;
+}
+
+footer a:link, footer a:visited {
+color: #101281; /*Color de los links*/
+}
+
+footer a:hover { 
+text-decoration: underline;
+color:#fff;/*Color de las letras al pasar el mouse sobre los links*/
+}
+
+footer p {
+margin-top: -15px;
+color: #101281;/*Color de letras*/
+}
